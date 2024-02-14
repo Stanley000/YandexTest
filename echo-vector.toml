@@ -1,0 +1,12 @@
+data_dir = "/vector-data-dir"
+[sources.http_input]
+type = "http_server"
+address = "0.0.0.0:8686"
+encoding = "ndjson"
+strict_path = false
+headers = [ "User-Agent", "Host" ]
+[sinks.stdout]
+type = "console"
+inputs = [ "http_input" ]
+[sinks.stdout.encoding]
+codec = "json"

@@ -1,0 +1,4 @@
+timestamp,severity,message
+2024-02-13T10:15:30,INFO,Service started successfully
+2024-02-13T10:20:45,ERROR,Internal server error occurred
+2024-02-13T10:25:55,WARNING,High CPU usage detected
